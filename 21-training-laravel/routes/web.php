@@ -33,6 +33,8 @@ Route::get('list', [CrudUserController::class, 'listUser'])->name('user.list');
 
 Route::get('signout', [CrudUserController::class, 'signOut'])->name('signout');
 
+Route::get('hacker/xss', [CrudUserController::class, 'xss'])->name('hacker');
+
 Route::get('/', function () {
     return view('welcome');
 });
