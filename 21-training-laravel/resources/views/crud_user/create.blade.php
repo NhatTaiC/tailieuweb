@@ -27,6 +27,9 @@
                                 <div class="form-group mb-3">
                                     <input type="text" placeholder="Favorites" id="favorites" class="form-control"
                                            name="favorites" required autofocus>
+                                    @if ($errors->has('favorites'))
+                                        <span class="text-danger">{{ $errors->first('favorites') }}</span>
+                                    @endif
                                 </div>
                                 <div class="form-group mb-3">
                                     <input type="password" placeholder="Password" id="password" class="form-control"
