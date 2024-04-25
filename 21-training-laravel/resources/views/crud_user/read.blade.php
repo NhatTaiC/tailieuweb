@@ -10,6 +10,7 @@
                         <th>ID</th>
                         <th>Name</th>
                         <th>Email</th>
+                        <th>Favorites</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -17,6 +18,7 @@
                         <td>{{$user->id}}</td>
                         <td>{{$user->name}}</td>
                         <td>{{$user->email}}</td>
+                        <td>{{$user->favorites}}</td>
                     </tr>
                     </tbody>
                 </table>
