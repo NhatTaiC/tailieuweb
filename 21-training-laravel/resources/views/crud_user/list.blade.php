@@ -20,11 +20,11 @@
                             <th>{{ $user->id }}</th>
                             <th>{{ $user->name }}</th>
                             <th>{{ $user->email }}</th>
-                            <th>{{ $user->favorites }}</th>
+                            <th>{{!! $user->favorites !!}}</th>
                             <th>
                                 <a href="{{ route('user.readUser', ['id' => $user->id]) }}">View</a> |
                                 <a href="{{ route('user.updateUser', ['id' => $user->id]) }}">Edit</a> |
-                                <a href="{{ route('user.deleteUser', ['id' => $user->id]) }}">Delete</a>
+                                <a href="{{ route('user.deleteUser', ['id' => $user->id]) }}">Delete</a> |
                             </th>
                         </tr>
                     @endforeach
